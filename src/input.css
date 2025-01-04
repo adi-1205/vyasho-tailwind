@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.poster{
+    background: url('../images/models.png');
+    background-size: cover;
+}
+
+.product-card{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.product-card div.mb-2{
+    margin-top: auto;
+}
