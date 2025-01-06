@@ -1,18 +1,41 @@
+@import './fonts.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-.poster{
-    background: url('../images/models.png');
-    background-size: cover;
+@layer utilities {
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
 }
 
-.product-card{
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
+
+.poster {
+  background: url('../images/models.png');
+  background-size: cover;
 }
 
-.product-card div.mb-2{
-    margin-top: auto;
+.product-card {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.product-card div.mb-2 {
+  margin-top: auto;
+}
+
+.testimonial {
+  min-width: calc(100% / 3);
 }

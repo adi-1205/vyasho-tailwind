@@ -1,0 +1,93 @@
+@font-face {
+  font-family: 'IntegralCF';
+  src: url('../fonts/integral/IntegralCF-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IntegralCF';
+  src: url('../fonts/integral/IntegralCF-Heavy.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Satoshi Regular */
+@font-face {
+  font-family: 'Satoshi';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Satoshi Regular'), url('../fonts/satoshi/Satoshi-Regular.woff') format('woff');
+}
+
+/* Satoshi Italic */
+@font-face {
+  font-family: 'Satoshi';
+  font-style: italic;
+  font-weight: normal;
+  src: local('Satoshi Italic'), url('../fonts/satoshi/Satoshi-Italic.woff') format('woff');
+}
+
+/* Satoshi Light */
+@font-face {
+  font-family: 'Satoshi';
+  font-style: normal;
+  font-weight: 300; /* Light is typically 300 weight */
+  src: local('Satoshi Light'), url('../fonts/satoshi/Satoshi-Light.woff') format('woff');
+}
+
+/* Satoshi Light Italic */
+@font-face {
+  font-family: 'Satoshi';
+  font-style: italic;
+  font-weight: 300; /* Light Italic is typically 300 weight */
+  src: local('Satoshi Light Italic'), url('../fonts/satoshi/Satoshi-LightItalic.woff') format('woff');
+}
+
+/* Satoshi Medium */
+@font-face {
+  font-family: 'Satoshi';
+  font-style: normal;
+  font-weight: 500; /* Medium is typically 500 weight */
+  src: local('Satoshi Medium'), url('../fonts/satoshi/Satoshi-Medium.woff') format('woff');
+}
+
+/* Satoshi Medium Italic */
+@font-face {
+  font-family: 'Satoshi';
+  font-style: italic;
+  font-weight: 500; /* Medium Italic is typically 500 weight */
+  src: local('Satoshi Medium Italic'), url('../fonts/satoshi/Satoshi-MediumItalic.woff') format('woff');
+}
+
+/* Satoshi Bold */
+@font-face {
+  font-family: 'Satoshi';
+  font-style: normal;
+  font-weight: 700; /* Bold is typically 700 weight */
+  src: local('Satoshi Bold'), url('../fonts/satoshi/Satoshi-Bold.woff') format('woff');
+}
+
+/* Satoshi Bold Italic */
+@font-face {
+  font-family: 'Satoshi';
+  font-style: italic;
+  font-weight: 700; /* Bold Italic is typically 700 weight */
+  src: local('Satoshi Bold Italic'), url('../fonts/satoshi/Satoshi-BoldItalic.woff') format('woff');
+}
+
+/* Satoshi Black */
+@font-face {
+  font-family: 'Satoshi';
+  font-style: normal;
+  font-weight: 900; /* Black is typically 900 weight */
+  src: local('Satoshi Black'), url('../fonts/satoshi/Satoshi-Black.woff') format('woff');
+}
+
+/* Satoshi Black Italic */
+@font-face {
+  font-family: 'Satoshi';
+  font-style: italic;
+  font-weight: 900; /* Black Italic is typically 900 weight */
+  src: local('Satoshi Black Italic'), url('../fonts/satoshi/Satoshi-BlackItalic.woff') format('woff');
+}

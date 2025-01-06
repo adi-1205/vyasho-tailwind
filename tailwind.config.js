@@ -4,9 +4,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        f0f0f0: '#f0f0f0', // Custom color added
-        f2f0f1: '#f2f0f1', // Custom color added
-        f0eeed: '#f0eeed', // Custom color added
+        f0f0f0: '#f0f0f0', 
+        f2f0f1: '#f2f0f1', 
+        f0eeed: '#f0eeed', 
+      },
+      fontFamily: {
+        'integral': ['IntegralCF', 'sans-serif'],
+        'satoshi': ['Satoshi', 'sans-serif']
       },
     },
   },
