@@ -39,3 +39,7 @@
 .testimonial {
   min-width: calc(100% / 3);
 }
+
+.subscribe-section{
+  background: linear-gradient(to bottom, white 0% 50%,#f0f0f0 50% );
+}
