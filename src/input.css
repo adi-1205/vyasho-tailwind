@@ -20,12 +20,6 @@
   }
 }
 
-
-.poster {
-  background: url('../images/models.png');
-  background-size: cover;
-}
-
 .product-card {
   display: flex;
   flex-direction: column;
@@ -37,7 +31,7 @@
 }
 
 .testimonial {
-  min-width: calc(100% / 3);
+  min-width: calc((100% - 40px) / 3); /* 20 + 20 gap between 3 testimonials */
 }
 
 .subscribe-section{

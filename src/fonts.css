@@ -10,6 +10,7 @@
   src: url('../fonts/integral/IntegralCF-Heavy.woff') format('woff');
   font-weight: 900;
   font-style: normal;
+  ascent-override: 120%;
 }
 
 /* Satoshi Regular */

@@ -1,11 +1,23 @@
+window.addEventListener('resize', heroInit)
 
 document.addEventListener("DOMContentLoaded", (event) => {
+    heroInit();
     gsapInit(gsap);
     docInit();
 });
 
 function formatNumber(num) {
     return num.toLocaleString();
+}
+
+function heroInit() {
+    const heroDiv = document.querySelector('.hero-div');
+    const posterDiv = document.querySelector('.poster');
+
+    if (heroDiv && posterDiv) {
+        const heroDivHeight = heroDiv.offsetHeight + parseInt(window.getComputedStyle(heroDiv).marginTop) + parseInt(window.getComputedStyle(heroDiv).marginBottom);
+        posterDiv.style.height = `${heroDivHeight}px`;
+    }
 }
 
 function gsapInit(gsap) {
@@ -99,25 +111,34 @@ function gsapInit(gsap) {
 
 function docInit(doc) {
     const testimonialSlider = document.getElementById('testimonial-slider');
-    const testimonial = document.getElementsByClassName('testimonial');
+    const testimonialItems = document.querySelectorAll('.testimonial');
     const leftArrow = document.getElementById('testimonial-slide-left');
     const rightArrow = document.getElementById('testimonial-slide-right');
 
-    let scrollAmount = 300;
+    const paddingX = parseInt(window.getComputedStyle(testimonialSlider).paddingLeft, 10);
+    let currentIndex = 0;
 
     leftArrow.addEventListener('click', () => {
-        testimonialSlider.scrollBy({
-            left: -scrollAmount - 20,
+        if (currentIndex === 0) return;
+        
+        currentIndex--;
+        const targetOffset = testimonialItems[currentIndex].offsetLeft - paddingX;
+
+        testimonialSlider.scrollTo({
+            left: targetOffset,
             behavior: 'smooth'
         });
-        cur--;
     });
 
     rightArrow.addEventListener('click', () => {
-        testimonialSlider.scrollBy({
-            left: scrollAmount - 40,
+        if (currentIndex === testimonialItems.length - 3) return;
+
+        currentIndex++;
+        const targetOffset = testimonialItems[currentIndex].offsetLeft - paddingX;
+
+        testimonialSlider.scrollTo({
+            left: targetOffset,
             behavior: 'smooth'
         });
-        cur++;
     });
 }

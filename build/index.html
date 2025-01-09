@@ -16,25 +16,26 @@
 <body class="min-h-screen font-satoshi">
 
     <div class="bg-black poppins-regular text-sm py-3 text-center ">
-        <div class="text-white mx-24 relative">
+        <div class="text-white relative md:mx-24 mx-0">
             Sign up and get 20% off to your first order.
             <a href="#" class="poppins-semibold underline underline-offset-4">Sign Up Now</a>
-            <img src="images/cross.svg" alt="" class="absolute inline right-0">
+            <img src="images/cross.svg" alt="" class="absolute hidden right-0 md:inline">
         </div>
     </div>
 
-    <nav class="bg-white py-6">
-        <div class="flex items-center mx-24 gap-10">
-            <span class="font-black text-3xl font-integral">
+    <nav class="bg-white py-5 sm:py-6">
+        <div class="flex items-center justify-between mx-4 md:mx-14 lg:mx-24 gap-10">
+            <p class="flex items-center font-integral font-black text-[25px] sm:text-3xl">
+                <img src="images/hamburger.svg" alt="" class="h-6 sm:h-8 block lg:hidden mr-4">
                 VYASHO
-            </span>
-            <ul class="text-base flex align-middle gap-6 capitalize">
+            </p>
+            <ul class="text-base align-middle xl:gap-6 gap-4 capitalize hidden lg:flex">
                 <li class="">shop <img src="images/down_arrow.svg" alt="" class="inline-block ml-1"></li>
                 <li class="">on sale</li>
                 <li class="">new arrivals</li>
                 <li class="">brands</li>
             </ul>
-            <div class="flex bg-f0f0f0 rounded-full flex-1 p-3">
+            <div class="hidden lg:flex bg-f0f0f0 rounded-full flex-1 p-3">
                 <span>
                     <img src="images/search.svg" alt="">
                 </span>
@@ -43,6 +44,9 @@
                     placeholder="Search for products...">
             </div>
             <div class="flex gap-3.5">
+                <span class="inline lg:hidden">
+                    <img src="images/search_dark.svg" alt="">
+                </span>
                 <span>
                     <img src="images/cart.svg" alt="">
                 </span>
@@ -81,12 +85,13 @@
                     </div>
                 </div>
             </div>
-            <div class="poster flex-1">
-                <!-- <img src="images/models.png" alt="" class="object-cover h-full w-full"> -->
+            <div class="poster flex-1 relative">
+                <img src="images/models.png" alt="" class="object-cover h-full w-full object-top">
+                <img src="images/sparkle.svg" alt="" class="absolute scale-75 lg:scale-100 top-[5%] right-[0%]"
+                    id="sparkle-1">
+                <img src="images/sparkle.svg" alt="" class="absolute scale-50 top-[30%]" id="sparkle-2">
             </div>
         </div>
-        <img src="images/sparkle.svg" alt="" class="absolute top-28 right-32" id="sparkle-1">
-        <img src="images/sparkle.svg" alt="" class="absolute right-1/2 scale-50 top-80" id="sparkle-2">
     </section>
 
     <div class="bg-black py-11">
@@ -289,19 +294,19 @@
             </h2>
 
             <div class="grid grid-rows-2 grid-cols-10 gap-5">
-                <div class=" col-span-4 relative max-h-[300px] gsap-ex-slideup-view">
+                <div class=" col-span-4 relative max-h-[300px] gsap-ex-slideup-view-half">
                     <span class="absolute top-[25px] left-[36px] text-4xl font-bold">Casual</span>
                     <img src="images/show1.png" alt="" class="rounded-[20px] w-full h-full object-cover">
                 </div>
-                <div class="col-span-6 relative max-h-[300px] gsap-ex-slideup-view">
+                <div class="col-span-6 relative max-h-[300px] gsap-ex-slideup-view-half">
                     <span class="absolute top-[25px] left-[36px] text-4xl font-bold">Casual</span>
                     <img src="images/show2.png" alt="" class="rounded-[20px] w-full h-full object-cover">
                 </div>
-                <div class="col-span-6 relative max-h-[300px] gsap-ex-slideup-view">
+                <div class="col-span-6 relative max-h-[300px] gsap-ex-slideup-view-half">
                     <span class="absolute top-[25px] left-[36px] text-4xl font-bold">Casual</span>
                     <img src="images/show3.png" alt="" class="rounded-[20px] w-full h-full object-cover">
                 </div>
-                <div class="col-span-4 relative max-h-[300px] gsap-ex-slideup-view">
+                <div class="col-span-4 relative max-h-[300px] gsap-ex-slideup-view-half">
                     <span class="absolute top-[25px] left-[36px] text-4xl font-bold">Casual</span>
                     <img src="images/show4.png" alt="" class="rounded-[20px] w-full h-full object-cover">
                 </div>
@@ -315,7 +320,8 @@
             </h2>
             <span class="absolute right-0 bottom-0">
                 <img src="images/arrow_left.svg" alt="" class="inline-block cursor-pointer" id="testimonial-slide-left">
-                <img src="images/arrow_right.svg" alt="" class="inline-block ml-4 cursor-pointer" id="testimonial-slide-right">
+                <img src="images/arrow_right.svg" alt="" class="inline-block ml-4 cursor-pointer"
+                    id="testimonial-slide-right">
             </span>
         </div>
 
